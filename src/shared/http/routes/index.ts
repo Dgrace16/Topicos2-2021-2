@@ -7,7 +7,7 @@ let routes = Router()
 
 //criando uma rota GET raiz
 routes.get('/',(request, response)=>{
-    //o que sera retornado para o ususario em json
+    //o que sera retornado para o usuário em json
     return response.json({
         message:'It is working'
     })
