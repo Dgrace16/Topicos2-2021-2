@@ -2,9 +2,9 @@ import { log } from "console";
 import { Console } from "node:console";
 
 const isValid: boolean = true;
-// variavel Boolean True e false
+// variável Boolean True e false
 const actualYear: number = 2020;
-// variavel tipo numero ela pode ser int, float e demais numericas
+// variável tipo numero ela pode ser int, float e demais numéricas
 const aula: string = "Iniciando com Typescript";
 // Tipo string cadeia de caracteres
 
@@ -26,7 +26,7 @@ const frutas: Array<string> = ["Laranja", "tomate", "maracuja"];
 const aluno: [String, number] =  ["D.Grace", 21]
 console.log(aluno);
 
-// numeração de variaveis 
+// numeração de variáveis 
 enum Tecnologias {
     Node, 
 	Typescript, 
@@ -82,7 +82,7 @@ class Professor extends Superior implements Saudacao{
         super(titulacao); // Chama construtor da Superclasse
         this.nome = nome;
     }
-    // criar metodos da interface 
+    // criar métodos da interface 
     bomDia(mensagem: string): void {
         console.log(`${mensagem}, querido ${this.nome} com titulação ${this.titulacao}`)
     }
