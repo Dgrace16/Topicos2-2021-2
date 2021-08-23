@@ -9,10 +9,10 @@ class Product{
     @Column()
     name: string;
 
-    @Column()
+    @Column('decimal')
     price: number;
 
-    @Column()
+    @Column('int')
     quantity: number;
 
     @CreateDateColumn()
@@ -22,3 +22,5 @@ class Product{
     updated_at: Date;
 
 }
+
+export default Product;
