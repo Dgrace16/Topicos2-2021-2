@@ -1,4 +1,5 @@
 import { getCustomRepository } from "typeorm";
+import AppError from "../../../shared/errors/AppError";
 import Product from "../typeorn/entities/Product";
 import ProductRepository from "../typeorn/respositories/ProductRepository";
 
@@ -22,7 +23,10 @@ class CreateProductService {
         //verificar se produto existe
         let ProductExists = await productRepository.findByName(name);
 
-        if (ProductExists) {console.log('Produto ja existe')}
+        if (ProductExists) {
+            console.log('Produto ja existe')
+            throw new AppError(``)
+        }
 
         //criar o produto para inserção
         let newProduct = productRepository.create({
